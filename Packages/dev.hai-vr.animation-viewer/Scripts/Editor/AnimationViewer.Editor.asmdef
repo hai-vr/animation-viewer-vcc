@@ -2,7 +2,9 @@
     "name": "AnimationViewer.Editor",
     "references": [
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
