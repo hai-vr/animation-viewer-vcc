@@ -9,10 +9,12 @@
     "name" : "Haï~"
   },
   "vpmDependencies": {
-    "dev.hai-vr.resilience.toolkit" : "1.0.x"
   },
   "legacyFolders" : {
     "Assets\\Hai\\AnimationViewer" : "6b1e2876697f44d1ad9b4ce24f452c98"
   },
-  "url" : "https://docs.hai-vr.dev/docs/products/animation-viewer"
+  "url" : "https://docs.hai-vr.dev/docs/products/animation-viewer",
+  "documentationUrl": "https://docs.hai-vr.dev/docs/products/animation-viewer",
+  "changelogUrl": "https://docs.hai-vr.dev/docs/changelogs/animation-viewer",
+  "license": "MIT"
 }
