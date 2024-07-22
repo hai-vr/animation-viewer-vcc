@@ -171,7 +171,7 @@ namespace Hai.AnimationViewer.Scripts.Editor
                 _projectRenderQueue.NormalizedTime(normalizedTime);
                 _projectRenderQueue.BasePose(basePose);
             }
-            EditorGUILayout.EndScrollView();
+            GUILayout.EndScrollView();
         }
 
         private void SaveGenerationParams()
