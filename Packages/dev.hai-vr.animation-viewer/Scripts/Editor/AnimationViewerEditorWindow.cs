@@ -279,6 +279,11 @@ namespace Hai.AnimationViewer.Scripts.Editor
 
             GUI.Box(selectionRect, texture);
 
+            QueueRerender();
+        }
+
+        internal static void QueueRerender()
+        {
             if (!_delayedThisFrame)
             {
                 EditorApplication.delayCall += Rerender;

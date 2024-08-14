@@ -61,6 +61,7 @@ namespace Hai.AnimationViewer.Scripts.Editor
             if (!assetPath.EndsWith(AnimExtensionWithDot)) return null;
 
             var texture = AnimationViewerEditorWindow.InternalGetRenderQueue().RequireRender(assetPath);
+            AnimationViewerEditorWindow.QueueRerender();
             
             return texture;
         }
