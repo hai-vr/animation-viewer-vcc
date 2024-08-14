@@ -263,6 +263,11 @@ namespace Hai.AnimationViewer.Scripts.Editor
             _projectRenderQueue = new AnimationViewerRenderQueue();
         }
 
+        internal static AnimationViewerRenderQueue InternalGetRenderQueue()
+        {
+            return _projectRenderQueue;
+        }
+
         private static void DrawAnimationClipItem(string guid, Rect selectionRect)
         {
             if (!_enabled) return;
