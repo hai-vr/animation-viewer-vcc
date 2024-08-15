@@ -31,8 +31,13 @@ namespace Hai.AnimationViewer.Scripts.Editor
         
         private static IEnumerable<SearchItem> FetchItems(SearchContext context, SearchProvider provider)
         {
+#if UNITY_2022_1_OR_NEWER
             if (context.empty)
                 yield break;
+#else
+            if (string.IsNullOrEmpty(context.searchText))
+                yield break;
+#endif
 
             foreach (var guid in AssetDatabase.FindAssets($"t:animationclip {context.searchQuery}"))
             {
