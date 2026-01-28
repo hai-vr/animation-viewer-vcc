@@ -94,7 +94,7 @@ namespace Hai.AnimationViewer.Scripts.Editor
                     var listArea = _projectBrowserListAreaField.GetValue(editorWindow);
                     if (listArea != null)
                     {
-                        _listAreaGridSizeField.SetValue(listArea, thumbnailSize);
+                        _listAreaGridSizeField.SetValue(listArea, thumbnailSizeSerialized.intValue);
                         if (previousSize != thumbnailSizeSerialized.intValue)
                         {
                             EditorApplication.RepaintProjectWindow();
